@@ -1,0 +1,391 @@
+/* General Reset */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #002f5f;
+  color: #fff;
+}
+
+header .logo {
+  height: 50px;
+  width: auto;
+}
+
+header nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 47, 95, 0.8), rgba(0, 47, 95, 0.8)), url('../images/hero.jpg') no-repeat center/cover;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  background: #ffd700;
+  color: #002f5f;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta:hover {
+  background: #f0c808;
+  transform: translateY(-3px);
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+}
+
+.secondary:hover {
+  background: #ffd700;
+  color: #002f5f;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+#about h2 {
+  font-size: 36px;
+  color: #002f5f;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+#about .cta {
+  margin-top: 10px;
+}
+
+/* Key Features Section */
+#features {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 36px;
+  color: #002f5f;
+  margin-bottom: 20px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #002f5f;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #002f5f;
+  color: #fff;
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+  color: #333;
+}
+
+#about h2 {
+  font-size: 36px;
+  color: #002f5f;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+#about .location {
+  margin-top: 30px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about .location h3 {
+  font-size: 24px;
+  color: #002f5f;
+  margin-bottom: 10px;
+}
+
+#about .location p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#about .location .cta {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ffd700;
+  color: #002f5f;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#about .location .cta:hover {
+  background: #f0c808;
+  transform: translateY(-3px);
+}
+
+
+/* Courses Section */
+#courses {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#courses h2 {
+  font-size: 36px;
+  color: #002f5f;
+  margin-bottom: 20px;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 2000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/*.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}*/
+
+.course h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #002f5f;
+}
+
+.course p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+/* Buttons at last */
+.butt1 {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  background: #ffd700;
+  color: #002f5f;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.butt1:hover {
+  background: #f0c808;
+}
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  color: #002f5f;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #002f5f;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button.cta {
+  display: block;
+  width: 100%;
+  padding: 10px 25px;
+  background: #ffd700;
+  color: #002f5f;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.cta:hover {
+  background: #f0c808;
+}
+
+/* Container for the Thank You message */
+.tybody{
+  background: #ffffff;
+}
+.thankyou-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 100%;
+}
+
+.tycta {
+  display: inline-block; /* Makes the button inline-block */
+  margin-top: 20px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  background-color: #ffd700; 
+  color: #002f5f; 
+  text-decoration: none; /* No underline */
+  border-radius: 4px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.tycta:hover {
+  background-color: #f0c808; 
+}
+
+.phno {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #002f5f;
+}
