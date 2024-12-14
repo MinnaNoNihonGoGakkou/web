@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official-Minna No Nihon Go Gakkou Website</title>
+  <link rel="stylesheet" href="ins.css">
+  <script src="sub.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <a href="ins.html">
+        <img src="logoo.png" class="logo" alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ins-ab.html">About</a></li>
+        <li><a href="ins-cou.html">Courses</a></li>
+        <li><a href="ins-con.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out for any queries, suggestions, or feedback.</p>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+      </div>
+      <button type="submit" class="cta">Send Message</button>
+      <div id="feedback" aria-live="polite"></div>
+    </form>
+    <div class="phno">
+      <p></p> Call us: 9841205644
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 All rights reserved.</p>
+  </footer>
+
+  <script type="text/javascript">
+    emailjs.init("i3_utId9RPTiZu8BN");
+  </script>
+</body>
+</html>
