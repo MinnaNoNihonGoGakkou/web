@@ -389,3 +389,14 @@ button.cta:hover {
   margin-bottom: 5px;
   color: #002f5f;
 }
+/* For Phone */
+@media (max-width: 768px) {
+    .nav-bar {
+        height: auto;
+        flex-direction: column;
+    }
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+}
