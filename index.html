@@ -1,102 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Official-Minna No Nihon Go Gakkou Website</title>
   <link rel="stylesheet" href="ins.css">
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    /* Header Styling */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #003366;
-      color: white;
-    }
-
-    .logo {
-      height: 50px;
-    }
-
-    /* Navigation */
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-    }
-
-    /* Hamburger Menu (Hidden by Default) */
-    .hamburger {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-    }
-
-    /* Responsive Styles for Smaller Screens */
-    @media (max-width: 768px) {
-      nav ul {
-        display: none; /* Hide navigation links by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #003366;
-        width: 100%;
-        text-align: center;
-      }
-
-      nav ul.active {
-        display: flex; /* Show navigation links when active */
-      }
-
-      .hamburger {
-        display: block; /* Show hamburger menu */
-      }
-    }
-  </style>
 </head>
 <body>
-  <!-- HEADER -->
   <header>
-    <div>
-      <a href="index.html">
-        <img src="logoo.png" class="logo" alt="Logo">
-      </a>
-    </div>
-
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    <!-- Navigation -->
+    <div><a href="index.html">
+      <img src="logoo.png" class="logo">
+    </a></div>
     <nav>
-      <ul id="nav-links">
+      <ul>
         <li><a href="ins-ab.html">About</a></li>
         <li><a href="ins-cou.html">Courses</a></li>
         <li><a href="ins-con.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- HERO SECTION -->
+      <!-- HERO SECTION -->
   <section id="hero">
     <h1>Welcome to Minna No Nihon Go Gakkou</h1>
     <p>Empowering you with quality Japanese language education.</p>
@@ -118,27 +40,17 @@
       <div class="feature">
         <h3>Certified Instructors</h3>
         <p>Learn from certified professionals with extensive experience.</p>
-        <a href="ins-con.html" class="butt1">Contacts</a>
+        <li><a href="ins-con.html" class="butt1">Contacts</a></li>
       </div>
       <div class="feature">
         <h3>Flexible Courses</h3>
         <p>Courses designed for beginners, intermediate, and advanced learners.</p>
-        <a href="ins-cou.html" class="butt1">Courses</a>
+        <li><a href="ins-cou.html" class="butt1">Courses</a></li>
       </div>
     </div>
   </section>
-
-  <!-- FOOTER -->
   <footer>
     <p>&copy; 2024 All rights reserved.</p>
   </footer>
-
-  <!-- JavaScript for Responsive Navigation -->
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById("nav-links");
-      navLinks.classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
